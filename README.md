@@ -15,6 +15,7 @@ This README is in the project root (`LULC_project/`). The prototype itself is in
 | Prototype: source code and requirements | `prototype_v4/` |
 | Trained model weights and normalisation statistics | `prototype_v4/weights/` (`best_v4b_fpn_resnet50_imagenet_ctx.pt`, about 100 MB, and `stats_v4.json`) |
 | Saved results the final notebook reads, dataset lists, figures | `evidence/` (`dataset_files/`, `results_final_model/`, `figures/`) |
+| Screen recording of a full run on an urban area | Submitted separately on Moodle |
 
 The notebooks need the Google Drive dataset, a local cache and Earth Engine access, so they are records of finished runs. Cells that would delete or overwrite data are disabled with a guard.
 
@@ -43,8 +44,8 @@ Earlier attempt (version 3) data and model weights (`best_unet_e40.pt`, `best_fp
 
 ## Look and feel (files that only change the appearance)
 - `visuals.py` and `visuals_data.py`: colours, the banner with a dotted world map (a pin follows the latitude and longitude you type), the step cards and the summary cards. They contain no analysis code; every number is passed in from `app.py` and `lulc_core_v4.py`. The map outline is Natural Earth (public domain).
-- `.streamlit/config.toml` (copy of `streamlit_config.toml`): the bright theme. Without it the page still works, but in a dark browser the tables and inputs stay dark. Create it with `mkdir -p .streamlit && cp streamlit_config.toml .streamlit/config.toml` inside this folder.
-- `scene_locations.csv` (optional, made by `export_scene_locations.py`): one dot per place the model was trained, validated or tested on, drawn on the banner map together with the two held-out regions. Without the file the banner shows only the pin and the held-out regions.
+- `.streamlit/config.toml` (included): the bright theme.
+- `scene_locations.csv` is not included; the banner shows the pin and the held-out regions only.
 
 ## What the app does (same recipe as the training data)
 - 10 km box on an exact UTM grid at 10 m; the 9 central 256 x 256 tiles (7.68 km square).

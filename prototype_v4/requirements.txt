@@ -1,9 +1,8 @@
-# minimum versions; pin the exact ones with `pip freeze` in the working environment before submitting
-numpy>=1.26
-pandas>=2.0
-requests>=2.31
-matplotlib>=3.8
-streamlit>=1.35
-earthengine-api>=0.1.390
-torch>=2.2
-segmentation-models-pytorch>=0.3.3
+earthengine-api==1.7.50
+matplotlib==3.11.2
+numpy==2.5.4
+pandas==3.1.0
+requests==2.34.2
+segmentation_models_pytorch==0.6.0
+streamlit==1.67.0
+torch==2.15.0
