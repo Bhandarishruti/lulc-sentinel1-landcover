@@ -1,0 +1,5 @@
+venv/
+.DS_Store
+__pycache__/
+prototype_v4/cache/
+*.zip

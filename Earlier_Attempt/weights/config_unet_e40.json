@@ -1,0 +1,1 @@
+{"tag": "unet_e40", "arch": "unet", "seed": 42, "K": 10, "crop": null, "epochs": 40, "bs": 16, "lr": 0.0003, "patience": 10}

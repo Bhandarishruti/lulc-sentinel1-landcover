@@ -1,0 +1,1 @@
+{"tag": "fpn_k10", "arch": "fpn", "seed": 42, "K": 10, "crop": null, "epochs": 25, "bs": 16, "lr": 0.0003, "patience": 6}

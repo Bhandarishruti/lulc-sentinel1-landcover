@@ -1,0 +1,1 @@
+{"tag": "fpn_ctx_e40", "arch": "fpn", "in_channels": 6, "std_scale": 3.0, "K": 10, "epochs": 40, "patience": 10, "lr": 0.0003, "bs": 16, "seed": 42}
